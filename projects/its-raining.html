@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>It's Raining</title>
+   <link rel="icon" href="../images/icone.png" type="image\icone.png">
+   <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="fate-factory">
+  <header>
+    <h1>It's Raining</h1>
+    <a class=retour href="../index.html">← Retour</a>
+  </header>
+  <section>
+    <h2>Idée et objectifs</h2>
+    <p class="project-description"> It's Raining, c'est un projet de jeu vidéo en 2d, pixelisé, fait sur Unity 2d en C#.
+        Ce projet, c'est tout d'abord une opptortunité de diversifié les langages de programmation que je maitrise,
+        mais aussi d'étendre l'éventail de mes compétences; en effet je réalise non seulement le code du jeu, mais
+        aussi les graphismes, les animation, l'écriture...
+        Je travail actuellement sur la démo, qui sera assez courte car son objectif reste de me familiariser à
+        des concepts nouveaux pour moi.
+    </p>
+      <h2 class="titre-code">Des visuels de ma démo</h2>
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+      </div>
+      <img src="../images/fate-factory-html1.png" alt="HTML Part 1" class="clickable-image thumbnail">
+      <img src="../images/fate-factory-html2.png" alt="HTML Part 2" class="clickable-image thumbnail">
+      <img src="../images/fate-factory-css1.png" alt="CSS Part 1" class="clickable-image thumbnail">
+      <img src="../images/fate-factory-css2.png" alt="CSS Part 2" class="clickable-image thumbnail">
+  </section>
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".clickable-image").forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+  <section>
+    <h2>Mon processus de développement</h2>
+    <p class="project-description">J'ai commencé par me familiariser avec l'interface d'Unity, et j'ai suivi les
+        classes proposées par l'application, afin de maitriser les bases de l'interface et du C#.
+        J'ai aussi travaillé en amont sur l'écriture, la direction artistique, et les brouillons des décors et 
+        des personnages.
+    </p>
+    <p class="project-description">Je vais ensuite commencer à mettre en forme la démo, en premier l'aspect graphique,
+        ensuite le code et les animations.
+    </p>
+  </section>
+   <footer>
+    <p>© 2025 Emery L Laborderie</p>
+    <p>Photographies Hamlet;Silence: @incandescent.es</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fate Factory</title>
+   <link rel="icon" href="../images/icone.png" type="image\icone.png">
+   <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="fate-factory">
+  <header>
+    <h1>Fate Factory</h1>
+    <a class=retour href="../index.html">← Retour</a>
+  </header>
+  <section>
+    <h2>Idée et objectifs</h2>
+    <p class="project-description">Fate Factory, une façon simple mais amusante de commencer votre journée. 
+      Mon objectif est de me familiariser davantage avec CSS et HTML, ainsi que de 
+      commencer à inclure la logique Javascript. C'est le premier projet que j'ai 
+      construit seul, veuillez noter qu'en termes de développement web, je partai de zéro.</p>
+      <h2 class="titre-code">Mon code HTML et CSS</h2>
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+      </div>
+      <img src="../images/fate-factory-html1.png" alt="HTML Part 1" class="clickable-image thumbnail">
+      <img src="../images/fate-factory-html2.png" alt="HTML Part 2" class="clickable-image thumbnail">
+      <img src="../images/fate-factory-css1.png" alt="CSS Part 1" class="clickable-image thumbnail">
+      <img src="../images/fate-factory-css2.png" alt="CSS Part 2" class="clickable-image thumbnail">
+  </section>
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".clickable-image").forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+  <section>
+    <h2>Mon processus de développement</h2>
+    <p class="project-description">J'ai commencé par ce qui me semblait le plus abordable, c'est à dire le front end, l'esthétique de la page, ainsi que
+      le concept d'image sélectionnée de manière aléatoire.</p>
+    <p class="project-description">Je vais ensuite commencer le processus d'afilier à chaque image un texte explicatif. Pour cela, je vais développer
+      davantage mes connaissances en JavaScript, qui manquent pour l'instant à ce projet.</p>
+  </section>
+  <a class="website" href="https://emerylenaiglaborderie-creator.github.io/Fate-Factory/">Pour visiter ce site, 
+      c'est par ici!</a>
+  <footer>
+    <p>© 2025 Emery L Laborderie</p>
+    <p>Photographies Hamlet;Silence: @incandescent.es</p>
+  </footer>
+</body>
+</html>

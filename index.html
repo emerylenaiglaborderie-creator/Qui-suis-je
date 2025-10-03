@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icone.png" type="image\icone.png">
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+        <title>Qui suis je?</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav">
+                <li><a href="#about-me">QUI SUIS-JE?</a></li>
+                <li><a href="#projects">PROJETS</a></li>
+                <li><a href="#cv">CURRICULUM VITAE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h2>~étudiante en informatique~</h2>
+            <h1>Emery Lénaïg Laborderie</h1>
+            <h2>~développeuse en devenir~</h2>
+        </header>
+        <section class="about-me" id="about-me">
+            <h2>- Cliquez sur les masques pour en savoir davantage! -</h2>
+            <h3>.Un point sur moi-même</h3>
+            <div class="click-toggle" onclick="toggleContent(this)">
+                <img id="masque"src="images/icone.png" alt="Cliquez pour en savoir davantage">
+                <p class="hidden-text">Je suis une personne créative dans l'âme. Du haut de mes 21 ans, j'ai pratiqué le théâtre,
+                    écrit des pièces, des nouvelles, des poèmes, étudié la littérature anglaise et française, appris à dessiner,
+                    à me servir d'instruments, à chanter...</p>
+                <p class="hidden-text">Toujours à la recherche de nouvelles manières de créer, j'ai découvert la programmation en janvier dernier.
+                    Depuis, je me forme continuellement afin de maitriser ce domaine. Dans le cadre de mon BTS SIO, j'apprends les
+                    fondamentaux de l'informatique. Sur internet et dans les livres, j'apprends de manière complémentaire l'art du
+                    développement.</p>
+            </div>
+            <h3>.Une explication de mon parcours</h3>
+            <div class="click-toggle" onclick="toggleContent(this)">
+                <img id="masque"src="images/icone.png" alt="Cliquez pour en savoir davantage">
+                <p class="hidden-text">Après avoir passé un baccalauréat en section internationale américaine, j'ai passé
+                    deux années en licence d'anglais. J'ai aussi pris part au cursus Acting in English aux Cours Florent Paris.</p>
+                <p class="hidden-text">D'un point de vue professionnelle, je dispose d'une experience assez polyvalente qui m'a permis de poser un
+                    premier pied dans le monde du travail. J'ai été assistante saisonnière en comptabilité au Crédit Agricole Morbihan.
+                    J'ai ensuite enseigné l'anglais en tant qu'intervenant.e chez Les Petits Bilingues.</p>
+                <p class="hidden-text">Enfin, laissez moi vous parler brievement de mon experience associative: la photo que vous pouvez observer
+                    derrière ce texte, c'est moi, sur scène, en train de réciter une tirade en tant que Hamlet, prince damné du Danemark.
+                    En effet, j'ai réécris, joué, mis en scène, et plus globalement encadré ce projet de pièce de théâtre bilingue, pour
+                    deux festivals de l'arène théâtre (association de Rennes 2). To be or not to be, that is the question...
+                    Aujourd'hui, et pour mon futur, j'ai décidé de continuer à créer, seulement, sous une nouvelle forme.</p>
+            </div>
+             <h3>.Moi et la programmation</h3>
+            <div class="click-toggle" onclick="toggleContent(this)">
+                <img id="masque"src="images/icone.png" alt="Cliquez pour en savoir davantage">
+                <p class="hidden-text">J'ai toujours été porté.e par l'art, sous toutes ses formes. Telle fut ma surprise de
+                    découvrir la vaste source de créativité que peuvent être la programmation et le développement. En effet,
+                    on reprend ainsi des codes et des règles existantes, puis on les entrecroisent avec finesse afin de produire
+                    quelque chose d'unique; comme tout art finalement.
+                </p>
+                <p class="hidden-text">Je me permet maintenant de vous conduire vers la prochaine partie de ce portfolio: mes projets. Vous y verrez
+                    une diversité certaine. Du site internet au projet de jeu indépendant, j'espère que mes projets vous
+                    éclaireront sur la personne que je suis, ainsi que sur mes capacités.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2> - Mes Projets - </h2>
+            <div class="projects-container">
+                <div class="project-preview">
+                    <a href="projects/fate-factory.html">
+                        <img src="images/fate-factory-thumb.jpg" alt="preview">
+                        <h3>Fate Factory</h3>
+                        <p>Un projet de site web en lien avec le tarot; avec HTML, CSS et des éléments JS.</p>
+                    </a>
+                </div>
+                <div class="project-preview">
+                    <a href="projects/its-raining.html">
+                        <img src="images/its-raining-thumb.png" alt="preview">
+                        <h3>It's Raining</h3>
+                        <p>Un projet de jeu vidéo indé en 2D, inspiré notamment de Undertale; avec du C# et Unity.</p>
+                    </a>
+                </div>
+                <div class="project-preview">
+                    <a href="projects/qui-suis-je.html">
+                        <img src="images/qui-suis-je-thumb.png" alt="preview">
+                        <h3>Qui suis-je?</h3>
+                        <p>Une présentation de moi ainsi que de mon rapport à la programmation, agrémenté de mon portoflio;
+                             avec HTML, CSS et JS.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="cv">
+            <div class="curriculum-vitae">
+                    <a href="projects/curriculum-vitae.html">
+                        <img src="images/curriculum-vitae.png" alt="preview">
+                        <h3>Mon CV</h3>
+                        <p>Voici mon CV mis à jour.</p>
+                    </a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Me contacter</h2>
+            <a href="mailto:lenaig.laborderie@gmail.com">EMAIL</a>
+            <a href="https://github.com/emerylenaiglaborderie-creator">GITHUB</a>
+            <a href="https://www.linkedin.com/in/emery-l%C3%A9na%C3%AFg-laborderie-8a11aa324/">LINKEDIN</a>
+        </section>
+        <footer>
+            <p>© 2025 Emery L Laborderie</p>
+            <p>Photographies Hamlet;Silence: @incandescent.es</p>
+        </footer>
+        <script src="assets/script.js"></script>
+    </body>
+</html>

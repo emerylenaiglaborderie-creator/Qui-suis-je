@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Qui suis-je?</title>
+   <link rel="icon" href="../images/icone.png" type="image\icone.png">
+   <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="fate-factory">
+  <header>
+    <h1>Qui suis-je?</h1>
+    <a class=retour href="../index.html">← Retour</a>
+  </header>
+  <section>
+    <h2>Idée et objectifs</h2>
+    <p class="project-description">Ce site sert non seulement de portfolio dans le cadre de mon BTS SIO
+        option SLAM à My Digital School Rennes, mais aussi de vitrine, exposant mes connaissances mises
+        en pratique.
+    </p>
+     <h2 class="titre-code">Des extraits de mon code HTML, CSS et JS
+     </h2>
+    <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    </div>
+    <img src="../images/fate-factory-html1.png" alt="HTML Part 1" class="clickable-image thumbnail">
+    <img src="../images/fate-factory-html2.png" alt="HTML Part 2" class="clickable-image thumbnail">
+    <img src="../images/fate-factory-css1.png" alt="CSS Part 1" class="clickable-image thumbnail">
+    <img src="../images/fate-factory-css2.png" alt="CSS Part 2" class="clickable-image thumbnail">
+  </section>
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".clickable-image").forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+  <section>
+    <h2>Mon processus de développement</h2>
+    <p class="project-description">Je suis passée d'un site CV assez simple, d'une page, regroupant mes experiences
+        ainsi que mes compétences. Je suis casiment repartie "from scratch", afin de reconstruire un site complètement
+        different. J'ai d'abord composé avec ce que j'étais capable de faire seule, puis, à l'aide de ressources comme
+        StackOverflow, CodeAcadémie ou encore Github, j'ai développé de nouvelles compétences (ex: Shadow Box, structure simple de
+        JS) ce qui m'a permis d'étoffer mon projet.
+    </p>
+    <p class="project-description">A mesure que ma formation enrichie mes connaissances, je vais développer divers
+        projets, que j'ajouterais à mon portfolio. Un autre de mes objectifs est d'embelir et d'optimiser mon site.
+    </p>
+  </section>
+  <footer>
+    <p>© 2025 Emery L Laborderie</p>
+    <p>Photographies Hamlet;Silence: @incandescent.es</p>
+  </footer>
+</body>
+</html>
