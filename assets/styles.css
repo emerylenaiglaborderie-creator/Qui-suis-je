@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== HERO ===== */
+/*  HERO  */
 ul {
   list-style-type: none;
   margin: 0;
@@ -63,7 +63,26 @@ header h2 {
   text-shadow: 1px 1px 1px #8d645a;
 }
 
-/* ===== ABOUT ===== */
+/* CHARACTER */
+
+#move {
+  position:fixed;
+  width:150px;
+  height:auto;
+  pointer-events: auto;
+  left:100px;
+  top:50%;
+  transform:translate(-50%, -50%);
+  cursor:pointer;
+
+}
+
+.moving-character {
+  overflow:hidden;
+  background-color: #f8f6f6;
+}
+
+/*  ABOUT */
 .about-me {
   padding: 60px 20px;
   background: #f8f6f6;
@@ -103,7 +122,7 @@ header h2 {
   display: block;
 }
 
-/* ===== PROJECTS ===== */
+/*  PROJECTS  */
 #projects {
   padding: 60px 20px;
   text-align: center;
@@ -143,7 +162,7 @@ header h2 {
 }
 
 
-/* ====== CV PREVIEW ====== */
+/* CV PREVIEW  */
 #cv {
   text-align: center;
   padding: 80px 20px;
@@ -178,11 +197,11 @@ header h2 {
   text-decoration-color: #8d645a;
 }
 
-/* ====== CONTACT ======*/
+/* CONTACT */
 
 #contact {
- background-color: #EAEAEA;
- text-align: center;
+  background-color: #EAEAEA;
+  text-align: center;
 }
 
 #contact a {
@@ -197,7 +216,7 @@ header h2 {
 #contact h2 {
   margin: 30px;
 }
-/* ====== FOOTER ====== */
+/* FOOTER */
 footer {
   background: #333;
   color: white;
@@ -210,7 +229,7 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* ====== PROJECT PAGES ====== */
+/* PROJECT PAGES  */
 .fate-factory {
   background-color: #EAEAEA;
   padding: 60px 20px;
@@ -242,7 +261,7 @@ footer p {
   text-decoration: underline;
   text-decoration-color: #8d645a;
 }
-/* ====== THUMBNAILS ====== */
+/* THUMBNAILS  */
 .thumbnail {
   width: 260px;
   margin: 15px;
@@ -256,7 +275,7 @@ footer p {
   box-shadow: 0 0 15px rgba(245,232,184,0.6);
 }
 
-/* ====== LIGHTBOX ====== */
+/* LIGHTBOX */
 .lightbox {
   display: none;
   position: fixed;
@@ -283,7 +302,7 @@ footer p {
   cursor: pointer;
 }
 
-/* ====== CURRICULUM VITAE ====== */
+/* CURRICULUM VITAE */
 .cv {
   display: inline-block;
   margin-left: 450px;
