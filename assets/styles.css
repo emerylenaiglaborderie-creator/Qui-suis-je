@@ -55,25 +55,6 @@ header h1 {
   font-family: 'DM Serif Text', Arial, Helvetica, sans-serif;
 }
 
-/* CHARACTER */
-
-#move {
-  position:fixed;
-  width:150px;
-  height:auto;
-  pointer-events: auto;
-  left:100px;
-  top:50%;
-  transform:translate(-50%, -50%);
-  cursor:pointer;
-
-}
-
-.moving-character {
-  overflow:hidden;
-  background-color: #f8f6f6;
-}
-
 /*  ABOUT */
 .about-me {
   padding: 60px 20px;
